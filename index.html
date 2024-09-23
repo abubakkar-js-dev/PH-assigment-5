@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home || Donate Bangladesh</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisy ui and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  tailwind customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4F461",
+              lightgray: "#F9F7F3",
+              para: "#111111",
+            },
+            fontFamily: {
+              lexend: "'Lexend', sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <!-- header section start -->
+    <header class="">
+      <!-- nav section start -->
+      <nav class="bg-lightgray pb-6 mb-[80px]">
+        <div class="container mx-auto py-6 flex justify-between items-center">
+          <div>
+            <button
+              class="bg-primary px-8 py-3 rounded-lg text-black font-semibold text-sm md:text-lg lg:text-xl"
+            >
+              Blog
+            </button>
+          </div>
+          <div class="flex items-center gap-3">
+            <img class="w-10 md:w-12" src="./assets/logo.png" alt="logo images" />
+            <h3 class="text-lg lg:text-xl font-semibold hidden md:block">
+              Donate Bangladesh
+            </h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/coin.png" alt="coin images" />
+            <p class="text-para/70 font-bold text-sm md:text-lg lg:text-xl">
+              <span id="total-amount">5500</span>
+              <span>BTD</span>
+            </p>
+          </div>
+        </div>
+      </nav>
+      <!-- nav section end -->
+      <!--  switch button section start -->
+      <section class="mb-8 flex justify-center gap-4 container mx-auto">
+        <button
+          class="bg-primary px-8 py-3 rounded-lg text-black font-semibold text-sm md:text-lg lg:text-xl"
+        >
+          Donation
+        </button>
+        <button
+          class="bg-transparent border-2 border-gray-200 px-8 py-3 rounded-lg text-para/70  font-semibold text-sm md:text-lg lg:text-xl"
+        >
+          History
+        </button>
+      </section>
+      <!--  switch button section end -->
+    </header>
+    <!-- header section end -->
+     <!-- main section start -->
+      
+     <!-- main section end -->
+  </body>
+</html>
