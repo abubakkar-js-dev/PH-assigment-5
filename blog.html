@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog || Donate Bangladesh</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/217bc341aa.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- daisy ui and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  tailwind customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4F461",
+              lightgray: "#F9F7F3",
+              para: "#111111",
+            },
+            fontFamily: {
+              lexend: "'Lexend', sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <!-- header section start -->
+    <header class="sticky top-0 z-50 mb-8">
+      <!-- nav section start -->
+      <nav class="bg-lightgray pb-6">
+        <div class="container mx-auto py-6 flex justify-between items-center">
+          <div>
+            <button
+              id="btn-home"
+              class="bg-primary px-8 py-3 rounded-lg text-black font-semibold text-sm md:text-lg lg:text-xl"
+            >
+              Home
+            </button>
+          </div>
+          <div class="flex items-center gap-3">
+            <img
+              class="w-10 md:w-12"
+              src="./assets/logo.png"
+              alt="logo images"
+            />
+            <h3 class="text-lg lg:text-xl font-semibold hidden md:block">
+              Donate Bangladesh
+            </h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/coin.png" alt="coin images" />
+            <p class="text-para/70 font-bold text-sm md:text-lg lg:text-xl">
+              <span id="total-amount">5500</span>
+              <span>BTD</span>
+            </p>
+          </div>
+        </div>
+      </nav>
+      <!-- nav section end -->
+    </header>
+    <!-- header section end -->
+    <!-- main section start -->
+    <main class="mb-[80px] container mx-auto">
+      <!-- important faq section start -->
+      <section>
+        <!-- title part -->
+        <div class="text-3xl flex gap-3 mb-6 md:mb-8 lg:mb-10">
+          <h2 class="font-bold">Important FAQ</h2>
+          <i class="fa-regular fa-circle-question"></i>
+        </div>
+        <!-- title part end-->
+        <!-- question and answeer part start -->
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The DOM is like a tree structure that represents the content of
+                a web page. It allows programming languages (like JavaScript) to
+                change the content, structure, and style of the page
+                dynamically.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <div>
+                <p class="mb-3 font-medium text-base">
+                  We can select elements in the DOM using JavaScript methods
+                  like:
+                </p>
+                <ul class="space-y-2">
+                  <li>getElementById() – Selects an element by its ID.</li>
+                  <li>
+                    getElementsByClassName() – Selects elements by their class name.
+                  </li>
+                  <li>
+                    querySelector() – Selects the first element that matches a
+                    CSS selector.
+                  </li>
+                  <li>
+                    querySelectorAll() – Selects all elements that match a CSS
+                    selector.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>Event delegation is when we add one event listener to a parent element instead of putting separate listeners on each child element. This way, the parent handles events for all its children   making it easier to manage, especially when new child elements are added.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+                <div>
+                    <p class="mb-3 font-medium text-base">
+                        We can change an element’s attributes (like src, href, etc.) and styles using JavaScript:
+                    </p>
+                    <ul class="space-y-2">
+                      <li>To change an attribute, use setAttribute().</li>
+                      <li>
+                        To change styles, use element.style, like element.style.color = 'red' to change text color.
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <!-- question and answeer part end -->
+      </section>
+      <!-- important faq section end -->
+    </main>
+    <!-- main section end -->
+    <!-- footer section start -->
+    <footer class="bg-lightgray h-[146px]"></footer>
+    <!-- footer section end -->
+
+    <script>
+      document.getElementById('btn-home').addEventListener('click',function (){
+        window.location.href = './index.html';
+      })
+    </script>
+  </body>
+</html>
