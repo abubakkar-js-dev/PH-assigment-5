@@ -3,12 +3,10 @@ const donationBtnEl = document.getElementById('btn-donation');
 const historyBtnEl = document.getElementById('btn-history');
 const donationSection = document.getElementById('donation-sec');
 const historySection = document.getElementById('history-sec');
-const donateNowAllBntEl = document.getElementsByClassName('btn-donate-now');
-
 
 const noakhaliDonateBtn = document.getElementById('btn-noakhali-donate');
 const feniDonateBtn = document.getElementById('btn-feni-donate');
-const quotaMovementDonateBtn = document.getElementById('btn-quota-movement-donate')
+const quotaMovementDonateBtn = document.getElementById('btn-quota-movement-donate');
 
 
 
@@ -48,7 +46,7 @@ function handleDonateNow(donateInputId,currentDonateId,donateTitleId){
 
     // input validation 
     if(donateAmount > totalBalance || donateAmount <= 0 || isNaN(donateAmount) || donateAmount === "" ){
-        alert('Invalid Amount. Please try again later.');
+        alert('Invalid Donation Amount. Please try again later.');
         return;
     }
 
