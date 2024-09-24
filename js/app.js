@@ -6,7 +6,6 @@ const historySection = document.getElementById('history-sec');
 const donateNowAllBntEl = document.getElementsByClassName('btn-donate-now');
 
 
-const totalBalance = getTextFieldValueById('total-amount');
 const noakhaliDonateBtn = document.getElementById('btn-noakhali-donate');
 const feniDonateBtn = document.getElementById('btn-feni-donate');
 const quotaMovementDonateBtn = document.getElementById('btn-quota-movement-donate')
@@ -42,7 +41,9 @@ historyBtnEl.addEventListener('click',function(){
 // donate now bnt handle function
 function handleDonateNow(donateInputId,currentDonateId,donateTitleId){
     const donateAmount = getInputValueById(donateInputId);
+    const totalBalance = getTextFieldValueById('total-amount');
     const newTotalBalance = totalBalance - donateAmount;
+    console.log(newTotalBalance);
     const currentDonateTotal = getTextFieldValueById(currentDonateId);
 
     // input validation 
