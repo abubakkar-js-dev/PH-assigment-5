@@ -104,5 +104,5 @@ quotaMovementDonateBtn.addEventListener('click',function(){
 //  change the location when click blog btn
 blogBtnEl.addEventListener('click',function(){
     window.location.href = './blog.html'
-    console.log('clicked blog')
+    console.log('clicked blog');
 })
