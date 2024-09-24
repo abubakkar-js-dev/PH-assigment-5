@@ -40,8 +40,8 @@
     <!-- header section start -->
     <header class="sticky top-0 z-50">
       <!-- nav section start -->
-      <nav class="bg-lightgray pb-6">
-        <div class="container mx-auto py-6 flex justify-between items-center">
+      <nav class="bg-lightgray">
+        <div class="container px-4 mx-auto py-6 flex justify-between items-center">
           <div>
             <button
               id="btn-blog"
@@ -68,32 +68,32 @@
             </p>
           </div>
         </div>
+        <!--  switch button section start -->
+        <section class="w-full pt-[80px] bg-white pb-6">
+          <div class="flex justify-center gap-4">
+            <button
+              id="btn-donation"
+              class="bg-primary border-2 border-gray-200 px-8 py-3 rounded-lg text-black font-semibold text-sm md:text-lg lg:text-xl"
+            >
+              Donation
+            </button>
+            <button
+              id="btn-history"
+              class="border-2 border-gray-200 px-8 py-3 rounded-lg text-para/70 font-semibold text-sm md:text-lg lg:text-xl"
+            >
+              History
+            </button>
+          </div>
+        </section>
+        <!--  switch button section end -->
       </nav>
       <!-- nav section end -->
     </header>
     <!-- header section end -->
     <!-- main section start -->
-    <main class="mb-[80px] my-4">
-      <!--  switch button section start -->
-      <section class=" w-full pt-[80px] pb-8 sticky top-[100px] bg-white">
-        <div class="flex justify-center gap-4 ">
-          <button
-            id="btn-donation"
-            class="bg-primary border-2 border-gray-200 px-8 py-3 rounded-lg text-black font-semibold text-sm md:text-lg lg:text-xl"
-          >
-            Donation
-          </button>
-          <button
-            id="btn-history"
-            class=" border-2 border-gray-200 px-8 py-3 rounded-lg text-para/70 font-semibold text-sm md:text-lg lg:text-xl"
-          >
-            History
-          </button>
-        </div>
-      </section>
-      <!--  switch button section end -->
+    <main class="mb-[80px] px-4">
       <!-- donation card container start -->
-      <section id="donation-sec" class=" space-y-8 container mx-auto">
+      <section id="donation-sec" class="space-y-8 container mx-auto">
         <!-- noakhali donation section start-->
         <div
           class="hero p-4 md:p-6 lg:p-8 border border-gray-200 rounded-2xl shadow-sm"
@@ -116,19 +116,24 @@
               >
                 Donate for Flood at Noakhali, Bangladesh
               </h3>
-              <p class="text-base font-light text-para/70 mb-6">
-                The recent floods in Noakhali have caused widespread
-                devastation, displacing families, damaging homes, and destroying
-                vital infrastructure. Many are left without access to basic
-                necessities like food, clean water, and shelter. In these
-                difficult times, your support can bring hope to those affected.
-                By donating, you can help provide essential supplies, medical
-                aid, and temporary housing to the people in need. Every
-                contribution, no matter how small, can make a significant
-                difference in rebuilding their lives and restoring their
-                communities. Together, we can offer relief and make a positive
-                impact on the lives of those suffering from this disaster.
-              </p>
+              <div class="text-base font-light text-para/70 mb-6">
+                <p>
+                  The recent floods in Noakhali have caused widespread
+                  devastation, displacing families, damaging homes, and
+                  destroying vital infrastructure. Many are left without access
+                  to basic necessities like food, clean water, and shelter. In
+                  these difficult times, your support can bring hope to those
+                  affected.
+                </p>
+                <p>
+                  By donating, you can help provide essential supplies, medical
+                  aid, and temporary housing to the people in need. Every
+                  contribution, no matter how small, can make a significant
+                  difference in rebuilding their lives and restoring their
+                  communities. Together, we can offer relief and make a positive
+                  impact on the lives of those suffering from this disaster.
+                </p>
+              </div>
               <input
                 id="input-noakhali-donate"
                 type="text"
@@ -138,7 +143,6 @@
               <button
                 id="btn-noakhali-donate"
                 class="btn-donate-now btn bg-primary w-full text-black font-semibold text-sm md:text-lg lg:text-xl"
-                
               >
                 Donate Now
               </button>
@@ -163,30 +167,35 @@
                 </div>
               </div>
               <h3
-              id="title-feni-donate"
+                id="title-feni-donate"
                 class="text-black font-bold text-base md:text-lg lg:text-xl mb-4"
               >
                 Donate for Flood Relief in Feni,Bangladesh
               </h3>
-              <p class="text-base font-light text-para/70 mb-6">
-                The recent floods in Feni have caused widespread devastation,
-                severely impacting local communities and disrupting daily life.
-                Homes have been destroyed, families displaced, and access to
-                basic necessities such as food, clean water, and medical
-                supplies has become scarce. In the face of this crisis, your
-                generous donation can provide immediate relief to those
-                affected, ensuring that they receive essential aid and support
-                in this critical time. Every contribution, regardless of size,
-                can make a real difference in helping families rebuild their
-                lives and restoring hope in the aftermath of this disaster.
-                Together, we can offer crucial assistance and help the people of
-                Feni recover from this calamity. Please consider donating today
-                to support those in urgent need and help make a positive impact
-                on their journey toward recovery. Your support can not only
-                provide immediate relief but also play a vital role in long-term
-                recovery efforts, helping rebuild homes and restore livelihoods.
-                .
-              </p>
+              <div class="text-base font-light text-para/70 mb-6">
+                <p>
+                  The recent floods in Feni have caused widespread devastation,
+                  severely impacting local communities and disrupting daily
+                  life. Homes have been destroyed, families displaced, and
+                  access to basic necessities such as food, clean water, and
+                  medical supplies has become scarce. In the face of this
+                  crisis, your generous donation can provide immediate relief to
+                  those affected, ensuring that they receive essential aid and
+                  support in this critical time.
+                </p>
+                <p>
+                  Every contribution, regardless of size, can make a real
+                  difference in helping families rebuild their lives and
+                  restoring hope in the aftermath of this disaster. Together, we
+                  can offer crucial assistance and help the people of Feni
+                  recover from this calamity. Please consider donating today to
+                  support those in urgent need and help make a positive impact
+                  on their journey toward recovery. Your support can not only
+                  provide immediate relief but also play a vital role in
+                  long-term recovery efforts, helping rebuild homes and restore
+                  livelihoods. .
+                </p>
+              </div>
               <input
                 id="input-feni-donate"
                 type="text"
@@ -203,7 +212,7 @@
           </div>
         </div>
         <!-- feni donation section end -->
-        <!-- aid inqured quota moment donation start -->
+        <!--  inqured quota moment donation start -->
         <div
           class="hero p-4 md:p-6 lg:p-8 border border-gray-200 rounded-2xl shadow-sm"
         >
@@ -226,27 +235,32 @@
                 id="title-quota-movement-donate"
                 class="text-black font-bold text-base md:text-lg lg:text-xl mb-4"
               >
-              Aid for Injured in the Quota Movement
+                Donate for Injured in the Quota Movement
               </h3>
-              <p class="text-base font-light text-para/70 mb-6">
-                The recent Quota movement has caused widespread unrest, leading
-                to numerous injuries and significant hardship for many
-                individuals. Many have been left without access to proper
-                medical care and essential supplies, making their recovery
-                process even more challenging. In these difficult times, your
-                support can make a crucial difference by providing medical
-                assistance, rehabilitation, and the necessary resources to those
-                affected. Every contribution helps ensure that injured
-                individuals receive the care and support they need to begin
-                healing and rebuilding their lives. Your generosity can play a
-                key role in alleviating their suffering and offering hope during
-                this difficult time. By coming together, we can ensure that
-                those impacted by the movement get the assistance they require
-                and that their needs are met as they recover. Every donation, no
-                matter the size, makes a positive impact in helping them move
-                forward. Please consider making a donation today to support
-                these brave individuals on their journey toward recovery.
-              </p>
+              <div class="text-base font-light text-para/70 mb-6">
+                <p>
+                  The recent Quota movement has caused widespread unrest,
+                  leading to numerous injuries and significant hardship for many
+                  individuals. Many have been left without access to proper
+                  medical care and essential supplies, making their recovery
+                  process even more challenging. In these difficult times, your
+                  support can make a crucial difference by providing medical
+                  assistance, rehabilitation, and the necessary resources to
+                  those affected.
+                </p>
+                <p>
+                  Every contribution helps ensure that injured individuals
+                  receive the care and support they need to begin healing and
+                  rebuilding their lives. Your generosity can play a key role in
+                  alleviating their suffering and offering hope during this
+                  difficult time. By coming together, we can ensure that those
+                  impacted by the movement get the assistance they require and
+                  that their needs are met as they recover. Every donation, no
+                  matter the size, makes a positive impact in helping them move
+                  forward. Please consider making a donation today to support
+                  these brave individuals on their journey toward recovery.
+                </p>
+              </div>
               <input
                 id="input-quota-movement-donate"
                 type="text"
@@ -256,7 +270,6 @@
               <button
                 id="btn-quota-movement-donate"
                 class="btn-donate-now btn bg-primary w-full text-black font-semibold text-sm md:text-lg lg:text-xl"
-              
               >
                 Donate Now
               </button>
@@ -282,7 +295,7 @@
       <dialog id="my_modal_1" class="modal">
         <div class="modal-box flex flex-col justify-center items-center gap-5">
           <h2 class="text-3xl lg:text-4xl font-bold text-center">Congrates!</h2>
-          <img class="w-10" src="./assets/coin.png" alt="">
+          <img class="w-10" src="./assets/coin.png" alt="" />
           <p class="">You Have Donated for Humankind</p>
           <p class="text-2xl font-bold">Successfully</p>
           <div class="modal-action">

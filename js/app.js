@@ -63,7 +63,7 @@ function handleDonateNow(donateInputId,currentDonateId,donateTitleId){
     historyContainer.innerHTML += `
         <div class="w-full border border-gray-200 p-8 rounded-2xl space-y-4">
           <h3 class="text-black text-lg md:text-xl font-bold">
-            ${donateAmount} Taka is ${donateTitle}
+            ${donateAmount} Taka is Donated at ${donateTitle}
           </h3>
           <p class="text-base text-para/70">
             Date : ${currentDate}
