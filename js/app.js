@@ -38,21 +38,22 @@ historyBtnEl.addEventListener('click',function(){
 
 // donate now bnt handle function
 function handleDonateNow(donateInputId,currentDonateId,donateTitleId){
-    const donateAmount = getInputValueById(donateInputId);
+    const inputDonateAmount = document.getElementById(donateInputId).value;
+    console.log('LOL',inputDonateAmount,typeof inputDonateAmount);
+    const donateAmountNumber = getInputValueById(donateInputId);
     const totalBalance = getTextFieldValueById('total-amount');
-    const newTotalBalance = totalBalance - donateAmount;
-    console.log(newTotalBalance);
+    const newTotalBalance = totalBalance - donateAmountNumber;
     const currentDonateTotal = getTextFieldValueById(currentDonateId);
 
     // input validation 
-    if(donateAmount > totalBalance || donateAmount <= 0 || isNaN(donateAmount) || donateAmount === "" ){
+    if( isNaN(donateAmountNumber) || donateAmountNumber <= 0 || donateAmountNumber > totalBalance || donateAmountNumber === "" || inputDonateAmount !== donateAmountNumber.toString()){
         alert('Invalid Donation Amount. Please try again later.');
         return;
     }
 
     // update the total and card amount
     document.getElementById('total-amount').innerText = newTotalBalance;
-    document.getElementById(currentDonateId).innerText = currentDonateTotal + donateAmount;
+    document.getElementById(currentDonateId).innerText = currentDonateTotal + donateAmountNumber;
 
     const historyContainer = document.getElementById('history-sec');
     const donateTitle = document.getElementById(donateTitleId).innerText;
@@ -63,7 +64,7 @@ function handleDonateNow(donateInputId,currentDonateId,donateTitleId){
     historyContainer.innerHTML += `
         <div class="w-full border border-gray-200 p-8 rounded-2xl space-y-4">
           <h3 class="text-black text-lg md:text-xl font-bold">
-            ${donateAmount} Taka is Donated at ${donateTitle}
+            ${donateAmountNumber} Taka is Donated at ${donateTitle}
           </h3>
           <p class="text-base text-para/70">
             Date : ${currentDate}
