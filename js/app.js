@@ -39,7 +39,6 @@ historyBtnEl.addEventListener('click',function(){
 // donate now bnt handle function
 function handleDonateNow(donateInputId,currentDonateId,donateTitleId){
     const inputDonateAmount = document.getElementById(donateInputId).value;
-    console.log('LOL',inputDonateAmount,typeof inputDonateAmount);
     const donateAmountNumber = getInputValueById(donateInputId);
     const totalBalance = getTextFieldValueById('total-amount');
     const newTotalBalance = totalBalance - donateAmountNumber;
